@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+    <title>
+        Learing javascript
+    </title>
+    <meta charset="utf-8"/>
+    <style>
+    #circle:{
+            width:200px;
+            height:200px;
+            background-color:red;
+            border-radius:100px;
+        }
+    </style>
+    
+   
+    </head>
+    <body>
+        <div id="circle"></div>
+        <input id="myinput" type="text" value="test">
+       
+        <button id="textchanger">Change first div text</button>
+        <div id="firstdiv">I am Cheng Qi</div>
+        <button id="textappender">add some text</button>
+        <div id="seconddiv">Cheng Qi is</div>
+        <button id="textcreator">Create some text</button>
+        <div id="thirddiv"> </div>
+        <script type="text/javascript">
+        var newText=document.getElementById("myinput").value;
+        document.getElementById("circle").onclick=function(){
+            document.getElementById("circle").style.display="none";
+        }
+            document.getElementById("textchanger").onclick=function(){
+                var newText=document.getElementById("myinput").value;
+                document.getElementById("firstdiv").innerHTML=newText;}
+                document.getElementById("textappender").onclick=function(){
+                    document.getElementById("seconddiv").innerHTML=document.getElementById("seconddiv").innerHTML+" a cool boy";
+                }
+document.getElementById("textcreator").onclick=function(){
+    document.getElementById("thirddiv").innerHTML="<ul><li>dog</li></ul> <ul><li>cat</li></ul>"
+}
+        </script>
+    </body>
+</html>
